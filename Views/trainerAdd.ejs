@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>New Trainer</title>
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+
+  <body class="container">
+    <div class="jumbotron">
+      <h1> Add New Trainer </h1>
+      <form method="post" action="/trainers">
+
+        <div class="form-group">
+          <label for="Name"> Name</label>
+          <input type="text" class="form-control" id="Name" placeholder="name" name="newuser[name]">
+        </div>
+        <div class="form-group">
+          <label for="Type">Region</label>
+          <input type="text" class="form-control" id="region" placeholder="kanto indigo etc" name="newuser[region]">
+        </div>
+        <div class="form-group">
+          <label for="Power">Power</label>
+          <input type="text" class="form-control" id="Power" placeholder="1-10" name="newuser[Power]">
+        </div>
+
+<%# can put name = "newuser[name]" and password = "newuser[password]" in the name s"%>
+
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+    </div>

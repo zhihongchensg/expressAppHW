@@ -1,0 +1,14 @@
+<h1> SHOW ALL THE TRAINERS </h1>
+
+<h2> Pokemons ... Pokemons..  </h2>
+<h3> Catch them ALL! </h3>
+<ul>
+    <% findAllTrainers.forEach(function(trainer) { %>
+      <li>
+        Name: <%= trainer.name %><br>
+        Type: <%= trainer.region %><br>
+        Power: <%= trainer.Power %><br>
+        <br><br>
+      </li>
+    <% }) %>
+</ul>

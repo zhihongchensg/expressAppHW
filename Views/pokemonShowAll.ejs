@@ -1,0 +1,15 @@
+<h1> SHOW ALL THE POKEMONS </h1>
+
+<h2> Pokemons ... Pokemons..  </h2>
+<h3> Catch them ALL! </h3>
+<ul>
+    <% findAllPokemon.forEach(function(pokemon) { %>
+      <li>
+        Name: <%= pokemon.name %><br>
+        Type: <%= pokemon.type %><br>
+        Power: <%= pokemon.power %><br>
+        TrainerID: <%= pokemon.trainerID %><br>
+        <br><br>
+      </li>
+    <% }) %>
+</ul>
